@@ -24,7 +24,7 @@ $ docker run --name ngix_lb-2 -d -p 9052:80 --link a2blog-1 --link a2blog-2 ngin
 
 ```bash
 # https://docs.docker.com/compose/reference/
-$ docker compose -f docker_file/docker-compose.yml up -d
+$ docker compose -f compose/auto_lb/compose.yml up -d
 
 $ docker compose -f docker_file/docker-compose.yml ls
 NAME                STATUS              CONFIG FILES
