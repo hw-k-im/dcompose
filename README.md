@@ -6,16 +6,16 @@
 
 ```mermaid
 graph TD;
-    ngix_lb-2-->a2blog-1;
-    ngix_lb-2-->a2blog-2;
+    ngix_lb-1-->myblog-1;
+    ngix_lb-1-->myblog-2;
 ```
 
 ```
 # ./gradlew bootJar
-$ sudo docker build -t a2blog:1.1.0 docker_file/httpd/
+$ sudo docker build -t myblog:1.1.0 docker_file/httpd/
 
 # java -jar app.jar <오션 - 포트, 기타 등등> 
-$ sudo docker run -dit --name myblog-1 -p 8051:80 a2blog:251014.1
+$ sudo docker run -dit --name myblog-1 -p 8051:80 myblog:251014.1
 $ sudo docker build -t nginx_lb:251014.1 docker_file/nginx/
 
 # 아래와 같이 하면 안됨 lb 에서 myblog-1 을 찾지 못함 ( docker logs 명령을 통해 확인 )
@@ -29,7 +29,7 @@ $ sudo docker run --name ngix_lb-1 -d -p 9052:80 --link myblog-1 nginx_lb:251014
 ```bash
 # 
 # 1. 서비스를 추가
-$ sudo docker run -dit --name myblog-2 -p 8052:80 a2blog:251014.1 
+$ sudo docker run -dit --name myblog-2 -p 8052:80 myblog:251014.1 
 
 # 2. vi docker_file/nginx/default.conf 수정
 
@@ -65,8 +65,8 @@ $ sudo docker network ls
 $ sudo docker network --help
 
 # 기존 컨테이너 삭제(docker stop <ID>;docker rm <ID>) 및 아래와 같이 다시 생성
-$ sudo docker run -dit --name myblog-1 -p 8051:80 a2blog:251014.1
-$ sudo docker run -dit --name myblog-2 -p 8052:80 a2blog:251014.1
+$ sudo docker run -dit --name myblog-1 -p 8051:80 myblog:251014.1
+$ sudo docker run -dit --name myblog-2 -p 8052:80 myblog:251014.1
 
 # 네트워크 안에 blog-1 추가
 $ sudo docker network connect blog-net myblog-1
