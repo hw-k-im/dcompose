@@ -20,6 +20,8 @@ services:
   blog:
     #build: ../../docker_file/httpd
     image: rlagusdn1210/test_api_demo:0.3.1
+    ports:
+      - "8765:8080"
     deploy:
       mode: replicated
       replicas: 1 # https://docs.docker.com/compose/compose-file/deploy/#replicas
