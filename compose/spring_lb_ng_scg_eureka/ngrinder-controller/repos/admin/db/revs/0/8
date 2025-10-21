@@ -1,0 +1,111 @@
+PLAIN
+K 11
+targetHosts
+V 10
+172.17.0.1
+K 9
+validated
+V 5
+false
+END
+ENDREP
+id: 7-4.0.r8/74
+type: file
+pred: 7-4.0.r7/534
+count: 3
+text: 7 0 439 2090 7292e9d0c7587fd347a7c2e2edd16dda 9cebadb2a954a7f5c19b6abbc0494e23133efa03 7-7/_5
+props: 8 0 61 61 a80117ff41a9695f1e705682c55bf161
+cpath: /172.17.0.1/api/users/hello2/TestRunner.groovy
+copyroot: 0 /
+
+PLAIN
+K 17
+TestRunner.groovy
+V 16
+file 7-4.0.r8/74
+END
+ENDREP
+id: 5-4.0.r8/410
+type: dir
+pred: 5-4.0.r7/874
+count: 3
+text: 8 348 49 49 f37ff1e347374a8f858c683c7e1fc1f5
+cpath: /172.17.0.1/api/users/hello2
+copyroot: 0 /
+
+PLAIN
+K 5
+hello
+V 17
+dir 3-5.0.r5/1215
+K 6
+hello2
+V 16
+dir 5-4.0.r8/410
+END
+ENDREP
+id: 3-4.0.r8/650
+type: dir
+pred: 3-4.0.r7/1114
+count: 4
+text: 8 567 70 70 a5dc7d7f0e6a048760259937749a7d05
+cpath: /172.17.0.1/api/users
+copyroot: 0 /
+
+PLAIN
+K 5
+users
+V 16
+dir 3-4.0.r8/650
+END
+ENDREP
+id: 1-4.0.r8/850
+type: dir
+pred: 1-4.0.r7/1316
+count: 4
+text: 8 801 36 36 87d9646177ed6e3a6a8dbc05addda5d0
+cpath: /172.17.0.1/api
+copyroot: 0 /
+
+PLAIN
+K 17
+TestRunner.groovy
+V 16
+file 2-2.0.r3/50
+K 3
+api
+V 16
+dir 1-4.0.r8/850
+END
+ENDREP
+id: 0-2.0.r8/1087
+type: dir
+pred: 0-2.0.r7/1555
+count: 6
+text: 8 995 79 79 e04fa93333b1afd5ef68381c7bd7707a
+cpath: /172.17.0.1
+copyroot: 0 /
+
+PLAIN
+K 14
+.gitconfig.yml
+V 17
+file 0-1.0.r1/346
+K 10
+172.17.0.1
+V 17
+dir 0-2.0.r8/1087
+END
+ENDREP
+id: 0.0.r8/1328
+type: dir
+pred: 0.0.r7/1797
+count: 8
+text: 8 1229 86 86 c2b4ff88d4152a43a4314b21a4dc2ea1
+cpath: /
+copyroot: 0 /
+
+7-4.0.t7-7 modify-file true true /172.17.0.1/api/users/hello2/TestRunner.groovy
+
+
+1328 1457
