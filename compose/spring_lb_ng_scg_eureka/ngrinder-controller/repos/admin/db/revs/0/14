@@ -1,0 +1,43 @@
+PLAIN
+K 11
+targetHosts
+V 0
+
+K 9
+validated
+V 5
+false
+END
+ENDREP
+id: 0-10.0.r14/63
+type: file
+pred: 0-10.0.r13/63
+count: 4
+text: 11 0 34 2123 65362c96e8cf06b69cfbdc7f25c89ccc 68176ac4b504f1f458e83dcf1352ae2b7c380f11 13-d/_1
+props: 14 0 50 50 9451ec6176239ace09c05a5d0190e9e9
+cpath: /hello-vuser200.groovy
+copyroot: 0 /
+
+PLAIN
+K 14
+.gitconfig.yml
+V 17
+file 0-1.0.r1/346
+K 21
+hello-vuser200.groovy
+V 18
+file 0-10.0.r14/63
+END
+ENDREP
+id: 0.0.r14/429
+type: dir
+pred: 0.0.r13/429
+count: 14
+text: 14 318 98 98 33860aeca0d45c40249210dbad7db5ed
+cpath: /
+copyroot: 0 /
+
+0-10.0.t13-d modify-file true true /hello-vuser200.groovy
+
+
+429 559

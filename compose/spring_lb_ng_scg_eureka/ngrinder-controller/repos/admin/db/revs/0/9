@@ -1,0 +1,19 @@
+PLAIN
+K 14
+.gitconfig.yml
+V 17
+file 0-1.0.r1/346
+END
+ENDREP
+id: 0.0.r9/60
+type: dir
+pred: 0.0.r8/1328
+count: 9
+text: 9 0 47 47 ba20ce70b9a2c710fb69438a9136e4ab
+cpath: /
+copyroot: 0 /
+
+0-2.0.r8/1087 delete-dir false false /172.17.0.1
+
+
+60 184

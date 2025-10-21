@@ -1,0 +1,54 @@
+PLAIN
+K 11
+targetHosts
+V 10
+172.17.0.1
+END
+ENDREP
+id: 2-2.0.r3/50
+type: file
+pred: 2-2.0.r2/884
+count: 1
+text: 2 0 821 2102 e54e288b3f794491ed61a4d917b67ce1 972db51ad4ced1ef20a7c7ad96f31a7bf5e46a4e 2-2/_2
+props: 3 0 37 37 d3959b64cce39b28831fd586d5ff2813
+cpath: /172.17.0.1/TestRunner.groovy
+copyroot: 0 /
+
+PLAIN
+K 17
+TestRunner.groovy
+V 16
+file 2-2.0.r3/50
+END
+ENDREP
+id: 0-2.0.r3/369
+type: dir
+pred: 0-2.0.r2/1188
+count: 1
+text: 3 307 49 49 c5265c1f299effcfad81d5f6f04c7841
+cpath: /172.17.0.1
+copyroot: 0 /
+
+PLAIN
+K 14
+.gitconfig.yml
+V 17
+file 0-1.0.r1/346
+K 10
+172.17.0.1
+V 16
+dir 0-2.0.r3/369
+END
+ENDREP
+id: 0.0.r3/608
+type: dir
+pred: 0.0.r2/1410
+count: 3
+text: 3 510 85 85 7595ff6b69954431487bb91587b6ab25
+cpath: /
+copyroot: 0 /
+
+2-2.0.t2-2 modify-file true true /172.17.0.1/TestRunner.groovy
+
+
+608 735
